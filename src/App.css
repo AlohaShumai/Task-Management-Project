@@ -1,0 +1,97 @@
+/* Reset default spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container for the entire dashboard */
+.dashboard-container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+/* Welcome message */
+.welcome {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Page title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Task form layout */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs and textarea */
+input[type="text"],
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 200px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Task item styling */
+.task-item {
+  background-color: #f0f2f5;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Completed tasks */
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Toast notifications */
+.Toastify__toast {
+  font-size: 0.95rem;
+}
